@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .outer-div {
+            margin: 0 auto;
+            max-width: 1000px;
+            height: 233px;
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+        .inner-div {
+            margin: 0 auto;
+            max-width: 1000px;
+            height: 233px;
+            background-color: rgb(214, 221, 221);
+            border-radius: 3px;
+            padding: 15px;
+        }
+
+        .l1 {
+            margin-left: 416px;
+        }
+    </style>
+</head>
+
+<body class="hh">
+    <div class="outer-div">
+      
+        Status : <input id="status" type="text" value="OFF" style=" border: none;
+        background: transparent; color :red">
+        <div class="inner-div">
+
+            <h5>Xvedios Email:xyz@gmail.com</h5>
+            <h5>Notification email:xyz@gnail.com</h5>
+            <h5>Interveal time:09
+                <form action="/app2/" method="post">
+                    <!-- <button name="forwardBtn" type="submit">Forward</button> -->
+                
+                <button name="forwardBtn" class="btn btn-success"type="submit" onclick="status_on()">Start</button>
+                <button type="button" class="btn btn-danger"  onclick="status_off()">Stop</button>
+            </form>
+            </h5>
+            <a href="#" class="card-link">Change Password <i class="fa fa-edit"></i></a><br>
+            <a href="#" class="card-link">Download log <i class="fa fa-download" aria-hidden="true"></i></a><br>
+            <button type="button" class="btn btn-info">Edit Info <i class="fa fa-edit"></i></button>
+            <button class="bt" style="float: right;">logout <i class="fa fa-sign-out"></i></button>
+
+        </div>
+    </div>
+    <script>
+        function status_on(){
+            document.getElementById('status').value = "ON"
+        }
+        function status_off(){
+            document.getElementById('status').value = "OFF"
+        }
+
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
